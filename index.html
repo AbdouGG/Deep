@@ -1,64 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A personal website showcasing my web development projects, skills, and contact information.">
     <meta name="keywords" content="web development, portfolio, projects, contact, personal website">
-    <meta property="og:title" content="My Personal Website">
+    <meta property="og:title" content="Deep">
     <meta property="og:description" content="Explore my web development projects and learn more about me.">
     <meta property="og:image" content="https://example.com/your-social-image.jpg">
     <meta property="og:url" content="https://example.com">
     <meta name="twitter:card" content="summary_large_image">
-    <title>My Personal Website</title>
+    <title>Deep</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
-<body>
+
+<body class="preload">
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://cdn.discordapp.com/attachments/944246656646402049/1273263660126703678/94c446f3-f829-4a1b-a068-9bd78b763a1b-removebg-preview.png?ex=66bdfab0&is=66bca930&hm=387a43120d556913e9eb2ef875adbeb2fdba1267009636fe1b9783fe204c4fd0&" alt="Logo" width="100" height="100">
+        </div>
+
+        <!-- Navigation -->
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#updates">Updates</a></li>
+                <li><a href="#home" aria-label="Go to Home section">Home</a></li>
+                <li><a href="#about" aria-label="Go to About section">About</a></li>
+                <!--<li><a href="#projects" aria-label="Go to Projects section">Projects</a></li> -->
+                <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+                <li><a href="#blog" aria-label="Go to Blog section">Updates</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm a web developer with a passion for creating amazing websites. Welcome to my personal space on the web!</p>
+    <section id="home" class="home-section">
+        <h1>Welcome to Deep Hub</h1>
+        <p>Explore a collection crafted with passion and expertise, offering a variety of scripts tailored for enhancing your Roblox experience. From utilities to gameplay enhancements, each script is designed to elevate your gameplay to the next level. Whether you're a developer seeking efficiency or a player looking for added features, you'll find tools here to suit your needs. Dive in and discover the possibilities!</p>
+        <a href="#portfolio" class="btn" aria-label="View My Portfolio">View Our Scripts</a>
     </section>
 
+    
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About Deep Hub</h2>
+            <p>your ultimate destination for Roblox scripts! Our mission is to provide a comprehensive collection of high-quality scripts that cater to both developers and players. At Deep Hub, we believe in empowering the Roblox community by offering tools that enhance gameplay, streamline development, and unlock new possibilities.</p>
+            <div class="about-buttons">
+                <a href="#updates" class="about-btn" aria-label="Contact Me">See Updates</a>
+                <a href="#contact" class="about-btn" aria-label="Contact Me">Contact Me</a>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="https://cdn.discordapp.com/attachments/944246656646402049/1272915940610150483/Video.png?ex=66bd5f99&is=66bc0e19&hm=b08fe907416ce01ec366ca41ac8d379a6fcbc0ad3f95152fcf5c73c705dd382e&" alt="A picture representing me">
+        </div>
+    </section>
+    <!-- Projects Section 
     <section id="projects">
         <h2>Projects</h2>
         <div id="projects-container"></div>
-    </section>
+    </section> -->
 
+    <!--updates
     <section id="updates">
         <h2>Latest Updates</h2>
         <div id="updates-container"></div>
+    </section> -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <h2>Discover Our Scripts</h2>
+        <div id="portfolio-container" class="portfolio-container">
+            <!-- Portfolio items will be dynamically inserted here -->
+        </div>
     </section>
+
+    <section id="blog" class="blog-section">
+        <h2>Latest Updates</h2>
+        <div id="blog-container" class="blog-container">
+            <!-- Blog posts will be dynamically inserted here -->
+        </div>
+    </section>
+    
 
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Join my Discord server or check out my YouTube channel for more content!</p>
         <p>
-            <a href="https://discord.gg/your-discord-server" class="contact-icon">
-                <img src="https://img.icons8.com/ios-filled/50/ffffff/discord-logo.png" alt="Discord" width="30" height="30">
+            <a href="https://discord.gg/your-discord-server" class="contact-icon" aria-label="Join My Discord Server">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/discord-logo.png" alt="Discord logo" width="30" height="30">
                 Join My Discord Server
             </a>
         </p>
         <p>
-            <a href="https://youtube.com/channel/your-channel-id" class="contact-icon">
-                <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube" width="30" height="30">
+            <a href="https://www.youtube.com/@Novatavio" class="contact-icon" aria-label="Visit My YouTube Channel">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube logo" width="30" height="30">
                 Visit My YouTube Channel
             </a>
         </p>
 
-        <h3>Feedback</h3>
+        <h3>Suggestions</h3>
         <form action="https://formspree.io/f/xanwjknp" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -66,93 +108,17 @@
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Your Feedback:</label>
+            <label for="message">Send Your Suggestions:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Send Feedback</button>
+            <button type="submit" aria-label="Send Feedback">Send</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 My Personal Website</p>
+        <p>&copy; 2024 Deep Hub</p>
     </footer>
-
-    <script>
-        // Load Updates
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('updates.json')
-                .then(response => response.json())
-                .then(data => {
-                    const updatesContainer = document.getElementById('updates-container');
-                    data.forEach(update => {
-                        const updateElement = document.createElement('div');
-                        updateElement.classList.add('update');
-                        
-                        const titleElement = document.createElement('h3');
-                        titleElement.textContent = update.title;
-                        
-                        const descriptionElement = document.createElement('p');
-                        descriptionElement.textContent = update.description;
-                        
-                        const imageElement = document.createElement('img');
-                        imageElement.src = update.image;
-                        imageElement.alt = update.title;
-                        imageElement.classList.add('medium-image');
-                        
-                        updateElement.appendChild(titleElement);
-                        updateElement.appendChild(descriptionElement);
-                        updateElement.appendChild(imageElement);
-                        
-                        updatesContainer.appendChild(updateElement);
-                    });
-
-                    // Optional: Add lightbox functionality to images
-                    const mediumImages = document.querySelectorAll('.medium-image');
-                    mediumImages.forEach((image) => {
-                        image.addEventListener('click', () => {
-                            const lightbox = createLightbox(image.src);
-                            document.body.appendChild(lightbox);
-                        });
-                    });
-                })
-                .catch(error => console.error('Error loading updates:', error));
-        });
-
-        function createLightbox(src) {
-            const lightbox = document.createElement('div');
-            lightbox.style.position = 'fixed';
-            lightbox.style.top = '0';
-            lightbox.style.left = '0';
-            lightbox.style.width = '100%';
-            lightbox.style.height = '100%';
-            lightbox.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
-            lightbox.style.display = 'flex';
-            lightbox.style.alignItems = 'center';
-            lightbox.style.justifyContent = 'center';
-            lightbox.style.zIndex = '1000';
-
-            const img = document.createElement('img');
-            img.src = src;
-            img.style.maxWidth = '90%';
-            img.style.maxHeight = '90%';
-            img.style.border = '5px solid #fff';
-            img.style.boxShadow = '0 0 10px rgba(255, 255, 255, 0.5)';
-
-            lightbox.appendChild(img);
-
-            lightbox.addEventListener('click', () => {
-                document.body.removeChild(lightbox);
-            });
-
-            return lightbox;
-        }
-
-
-        
-    </script>
-
-    
-
-    
+    <button id="back-to-top" aria-label="Back to top">↑</button>
 </body>
+
 </html>

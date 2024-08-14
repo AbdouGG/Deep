@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Introduction to Web Development",
+        "image": "https://cdn.discordapp.com/attachments/944246656646402049/1272915940610150483/Video.png?ex=66bcb6d9&is=66bb6559&hm=d2108bf6ccb0fc4a9ef3970e8ef1c132df06ab7c0d87778a5b5ba5f7320ba00e&",
+        "description": "A beginner's guide to web development covering HTML, CSS, and JavaScript.",
+        "link": "https://robloxg503.blogspot.com/2024/08/blog-post.html"
+    },
+    {
+        "title": "Understanding CSS Grid",
+        "image": "images/css-grid.jpg",
+        "description": "Learn the fundamentals of CSS Grid to create complex web layouts easily.",
+        "link": "blog/css-grid.html"
+    },
+    {
+        "title": "JavaScript Tips and Tricks",
+        "image": "images/js-tips.jpg",
+        "description": "Explore some useful JavaScript tips to enhance your coding skills.",
+        "link": "blog/js-tips.html"
+    }
+]

@@ -1,26 +1,49 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif; /* Updated for modern typography */
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #4c6ef5, #2b2d42);
-    color: #f4f4f4;
-    background-size: cover;
+    background: url('https://cdn.discordapp.com/attachments/944246656646402049/1273240965288558673/Designer_Studio_wall_vid1_21.png?ex=66bde58d&is=66bc940d&hm=b33d9dd3aa15ae59c26a48a61071ab10c0196925cb2239f7d9850f610f157612&') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire background */
+    color: #ffffff; /* White text */
+    visibility: visible;
+    opacity: 1;
+    animation: fadeIn 1.5s ease-in-out; /* Apply fade-in animation */
 }
 
+/* Define the fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Initially hide the body content */
+body.preload {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* Header Styles */
 header {
     text-align: center;
     padding: 50px 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8); /* Slightly darker background */
+    border-bottom: 2px solid #ff5733; /* Added border for separation */
 }
 
 header h1 {
     font-size: 3em;
     margin-bottom: 10px;
-    color: #f4f4f4;
-    text-shadow: 0 0 10px #fff, 0 0 20px #4c6ef5;
+    color: #ffffff; /* White text */
+    text-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733; /* Orange glow */
+    font-family: 'Poppins', sans-serif; /* Consistent modern font */
 }
 
+/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
@@ -31,16 +54,17 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #f4f4f4;
+    color: #ffffff; /* White text */
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #4c6ef5;
+    /*background-color: #ff5733; /* Orange background */
     transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold; /* Emphasized text */
 }
 
 nav ul li a:hover {
-    background-color: #f4f4f4;
-    color: #4c6ef5;
+    /*background-color: #ffffff; /* White background */
+    color: #ff5733; /* Orange text */
     transform: scale(1.1);
 }
 
@@ -48,15 +72,105 @@ nav ul li a:hover {
 section {
     padding: 50px 20px;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: rgba(28, 28, 28, 0.9); /* Dark gray with transparency */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Soft shadow for depth */
 }
 
-#about {
-    background-color: rgba(255, 255, 255, 0.1);
-    margin: 20px;
-    border-radius: 15px;
-    animation: fadeIn 2s ease-out;
+
+/* Home Section */
+.home-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text */
+    font-family: 'Poppins', sans-serif; /* Modern font for headings */
+}
+.home-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
 }
 
+/* About Section Styling */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 38px;
+    background-color: #1c1c1c; /* Dark gray background */
+    color: #ffffff; /* White text */
+    border-radius: 10px;
+    margin: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Added depth */
+}
+
+
+
+.about-content {
+    max-width: 50%;
+}
+
+.about-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text */
+    font-family: 'Poppins', sans-serif; /* Modern font for headings */
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.about-buttons {
+    margin-top: 30px;
+}
+
+.about-image {
+    max-width: 40%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    /* Smooth transition for the hover effect */
+}
+
+.about-image img:hover {
+    transform: scale(1.1); /* Zooms in the image on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Slightly more intense shadow on hover */
+}
+
+/* Universal Button Styling */
+.btn, .about-btn, .project-btn, form button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733; /* Orange background */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; 
+    /* Smooth transitions */
+    font-weight: bold; /* Bold text for buttons */
+}
+
+.btn:hover, .about-btn:hover, .project-btn:hover, form button:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #ff5733; /* Orange text on hover */
+    transform: scale(1.05); /* Slightly enlarges the button */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+}
+
+/* About Section Buttons */
+.about-btn {
+    margin-right: 20px;
+}
+
+/* Project Section */
 .project {
     background-size: cover;
     background-position: center;
@@ -65,39 +179,31 @@ section {
     margin: 20px auto;
     border-radius: 10px;
     max-width: 600px;
-    color: #fff;
+    color: #ffffff; /* White text */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
     transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Soft shadow */
 }
+
 .project:hover {
     transform: scale(1.05);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 87, 51, 0.5); /* Orange background on hover */
 }
 
+/* Specific Section Button Styling (optional) */
 .project-btn {
-    display: inline-block;
     margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #4c6ef5;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
-.project-btn:hover {
-    background-color: #2b2d42;
-    transform: scale(1.05);
-}
-
 
 /* Update Section Styles */
 #updates {
     padding: 50px 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(28, 28, 28, 0.9); /* Dark gray background with slight transparency */
     margin: 20px;
     border-radius: 15px;
+    color: #ffffff; /* White text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Soft shadow for depth */
 }
 
 .update {
@@ -110,6 +216,8 @@ section {
     height: auto;
     transition: transform 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Soft shadow for images */
 }
 
 /* Optional: Lightbox Styles */
@@ -117,24 +225,26 @@ section {
     transform: scale(1.05);
 }
 
-
 /* Contact Section */
 #contact {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 50px 20px;
-    margin: 20px;
+    background-color: rgba(28, 28, 28, 0.9); /* Dark gray background with slight transparency */
+    padding: 50px 38px;
+    margin: 50px;
     border-radius: 15px;
     animation: fadeInUp 1.5s ease-out;
+    color: #ffffff; /* White text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Added depth */
 }
 
 #contact h3 {
     margin-top: 40px;
+    color: #ffffff; /* White text */
 }
 
 .contact-icon {
     display: inline-block;
     margin: 10px;
-    color: #f4f4f4;
+    color: #ffffff; /* White text */
     text-decoration: none;
     font-size: 1.2em;
     transition: color 0.3s;
@@ -143,25 +253,29 @@ section {
 .contact-icon img {
     vertical-align: middle;
     margin-right: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Added shadow for icons */
 }
 
 .contact-icon:hover {
-    color: #4c6ef5;
+    color: #ff5733; /* Orange on hover */
 }
 
 /* Feedback Form */
 form {
     max-width: 600px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8); /* Added depth */
 }
 
 form label {
     display: block;
     margin-bottom: 5px;
     text-align: left;
+    color: #ffffff; /* White text */
 }
 
 form input, form textarea {
@@ -171,31 +285,178 @@ form input, form textarea {
     border-radius: 5px;
     border: none;
     outline: none;
-}
-
-form button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4c6ef5;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #2b2d42;
-    transform: scale(1.05);
+    background-color: #333333; /* Dark input background */
+    color: #ffffff; /* White text */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-top: 2px solid #4c6ef5;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker footer background */
+    border-top: 2px solid #ff5733; /* Orange border */
+    color: #ffffff; /* White text */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.8); /* Added depth */
 }
+
+/* Back to Top Button Styles */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #ff5733; /* Orange background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 20%;
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #ffffff; /* White background */
+    color: #ff5733; /* Orange text */
+    transform: scale(1.1);
+}
+
+/* Logo Styles */
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* Navigation Styles */
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 50px 20px;
+    background-color: rgba(28, 28, 28, 0.9);
+    text-align: center;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.portfolio-item p {
+    padding: 0 20px;
+    font-size: 1em;
+    color: #666;
+}
+
+.portfolio-item .btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-item .btn:hover {
+    background-color: #0056b3;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+/* Blog section */
+.blog-section {
+    padding: 50px 20px;
+    background-color: rgba(28, 28, 28, 0.9);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.blog-post {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: #333;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-post h3 {
+    margin: 15px 0 10px;
+    font-size: 1.5em;
+}
+
+.blog-post p {
+    padding: 0 20px;
+    font-size: 1em;
+    color: #666;
+}
+
+.blog-post .btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
 
 /* Animations */
 @keyframes fadeIn {
@@ -206,4 +467,8 @@ footer {
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+html {
+    scroll-behavior: smooth;
 }

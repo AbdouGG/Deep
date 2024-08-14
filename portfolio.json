@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Project Title 1",
+        "description": "Short description of the project. This can include technologies used, and the purpose of the project.",
+        "image": "https://cdn.discordapp.com/attachments/944246656646402049/1272915940610150483/Video.png?ex=66bcb6d9&is=66bb6559&hm=d2108bf6ccb0fc4a9ef3970e8ef1c132df06ab7c0d87778a5b5ba5f7320ba00e&",
+        "link": "https://example.com/project-1"
+    },
+    {
+        "title": "Project Title 2",
+        "description": "Short description of the project. This can include technologies used, and the purpose of the project.",
+        "image": "https://cdn.discordapp.com/attachments/944246656646402049/1272915940610150483/Video.png?ex=66bcb6d9&is=66bb6559&hm=d2108bf6ccb0fc4a9ef3970e8ef1c132df06ab7c0d87778a5b5ba5f7320ba00e&",
+        "link": "https://example.com/project-1"
+    },
+    {
+        "title": "Project Title 3",
+        "description": "Short description of the project. This can include technologies used, and the purpose of the project.",
+        "image": "https://cdn.discordapp.com/attachments/944246656646402049/1272915940610150483/Video.png?ex=66bcb6d9&is=66bb6559&hm=d2108bf6ccb0fc4a9ef3970e8ef1c132df06ab7c0d87778a5b5ba5f7320ba00e&",
+        "link": "https://example.com/project-1"
+    }
+    
+]
