@@ -1,124 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A personal website showcasing my web development projects, skills, and contact information.">
-    <meta name="keywords" content="web development, portfolio, projects, contact, personal website">
-    <meta property="og:title" content="Deep">
-    <meta property="og:description" content="Explore my web development projects and learn more about me.">
-    <meta property="og:image" content="https://example.com/your-social-image.jpg">
-    <meta property="og:url" content="https://example.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>Deep</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Deep Hub</title>
 </head>
-
-<body class="preload">
+<body>
     <header>
-        <!-- Logo -->
-        <div class="logo">
-            <img src="https://cdn.discordapp.com/attachments/944246656646402049/1273263660126703678/94c446f3-f829-4a1b-a068-9bd78b763a1b-removebg-preview.png?ex=66bdfab0&is=66bca930&hm=387a43120d556913e9eb2ef875adbeb2fdba1267009636fe1b9783fe204c4fd0&" alt="Logo" width="100" height="100">
-        </div>
+        <a href="#" class="logo">Deep Hub</a>
 
-        <!-- Navigation -->
         <nav>
-            <ul>
-                <li><a href="#home" aria-label="Go to Home section">Home</a></li>
-                <li><a href="#about" aria-label="Go to About section">About</a></li>
-                <!--<li><a href="#projects" aria-label="Go to Projects section">Projects</a></li> -->
-                <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
-                <li><a href="#blog" aria-label="Go to Blog section">Updates</a></li>
-            </ul>
+            <a href="#" class="active"> Home</a>
+            <a href="#scripts" >Scripts</a>
+            <a href="#" >Skills</a>
+            <a href="#" >Education</a>
+            <a href="#" >Experience</a>
+            <a href="#" >Contact</a>
         </nav>
     </header>
-
-    <section id="home" class="home-section">
-        <h1>Welcome to Deep Hub</h1>
-        <p>Explore a collection crafted with passion and expertise, offering a variety of scripts tailored for enhancing your Roblox experience. From utilities to gameplay enhancements, each script is designed to elevate your gameplay to the next level. Whether you're a developer seeking efficiency or a player looking for added features, you'll find tools here to suit your needs. Dive in and discover the possibilities!</p>
-        <a href="#portfolio" class="btn" aria-label="View My Portfolio">View Our Scripts</a>
-    </section>
-
-    
-
-    <section id="about" class="about-section">
-        <div class="about-content">
-            <h2>About Deep Hub</h2>
-            <p>your ultimate destination for Roblox scripts! Our mission is to provide a comprehensive collection of high-quality scripts that cater to both developers and players. At Deep Hub, we believe in empowering the Roblox community by offering tools that enhance gameplay, streamline development, and unlock new possibilities.</p>
-            <div class="about-buttons">
-                <a href="#updates" class="about-btn" aria-label="Contact Me">See Updates</a>
-                <a href="#contact" class="about-btn" aria-label="Contact Me">Contact Me</a>
+    <section class="home">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Deep Hub</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://discord.com" target="_blank"><i class="fa-brands fa-discord"></i></a>
             </div>
-        </div>
-        <div class="about-image">
-            <img src="https://cdn.discordapp.com/attachments/944246656646402049/1272915940610150483/Video.png?ex=66bd5f99&is=66bc0e19&hm=b08fe907416ce01ec366ca41ac8d379a6fcbc0ad3f95152fcf5c73c705dd382e&" alt="A picture representing me">
-        </div>
-    </section>
-    <!-- Projects Section 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div id="projects-container"></div>
-    </section> -->
-
-    <!--updates
-    <section id="updates">
-        <h2>Latest Updates</h2>
-        <div id="updates-container"></div>
-    </section> -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
-        <h2>Discover Our Scripts</h2>
-        <div id="portfolio-container" class="portfolio-container">
-            <!-- Portfolio items will be dynamically inserted here -->
-        </div>
-    </section>
-
-    <section id="blog" class="blog-section">
-        <h2>Latest Updates</h2>
-        <div id="blog-container" class="blog-container">
-            <!-- Blog posts will be dynamically inserted here -->
+            <a href="#" class="btn">Hire me</a>
         </div>
     </section>
     
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Join my Discord server or check out my YouTube channel for more content!</p>
-        <p>
-            <a href="https://discord.gg/your-discord-server" class="contact-icon" aria-label="Join My Discord Server">
-                <img src="https://img.icons8.com/ios-filled/50/ffffff/discord-logo.png" alt="Discord logo" width="30" height="30">
-                Join My Discord Server
-            </a>
-        </p>
-        <p>
-            <a href="https://www.youtube.com/@Novatavio" class="contact-icon" aria-label="Visit My YouTube Channel">
-                <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube logo" width="30" height="30">
-                Visit My YouTube Channel
-            </a>
-        </p>
-
-        <h3>Suggestions</h3>
-        <form action="https://formspree.io/f/xanwjknp" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Send Your Suggestions:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit" aria-label="Send Feedback">Send</button>
-        </form>
+    <section id="scripts" class="scripts-section">
+        <h2>Scripts</h2>
+        <div id="scripts-container" class="scripts-container">
+            
+        </div>
     </section>
+    
+    <script src="scripts.js"></script>   
 
-    <footer>
-        <p>&copy; 2024 Deep Hub</p>
-    </footer>
-    <button id="back-to-top" aria-label="Back to top">↑</button>
+
 </body>
-
 </html>
